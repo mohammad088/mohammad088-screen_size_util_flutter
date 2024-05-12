@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                            SizedBox(
                             height: 50.r,
                             width: 40.w,
-                            child: Icon(Icons.shopping_cart, size: 25.dg),
+                            child: Icon(Icons.shopping_cart, size: 25.sp),
                           ),
                           Positioned(
                             right: 5.w,
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: 50.h,
+                    height: 40.h,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(50)),
                         elevation: 3,
                         child: SizedBox(
-                          width: 300.w,
+                          width: 280.w,
                           height: 50.h,
                           child: TextField(
                             decoration: InputDecoration(
@@ -101,7 +101,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      ElevatedButton(
+                      IconButton(
                         onPressed: () {},
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -109,9 +109,9 @@ class HomeScreen extends StatelessWidget {
                           minimumSize:
                           MaterialStateProperty.all( Size(50.w, 50.h)),
                         ),
-                        child:  SizedBox(
+                        icon:  SizedBox(
                           width: 50.w,
-                          height: 50.h,
+                          height: 40.h,
                           child: const Icon(
                             Icons.filter_vintage_rounded,
                             color: Colors.grey,
@@ -275,7 +275,7 @@ class HomeScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               SizedBox(
-                                  width: 100, height: 100, child: medicine.image),
+                                  width: 70.w, height: 70.h, child: medicine.image),
                               Text(
                                 medicine.name,
                                 style: const TextStyle(fontWeight: FontWeight.bold),

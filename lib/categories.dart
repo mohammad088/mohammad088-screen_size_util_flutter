@@ -10,7 +10,7 @@ class Category {
 
 List<Category> categories = [
   Category(
-      title: "kidney Medicine",
+      title: "kidney Med",
       icon: Image.asset("assets/images/img_1.png"),
       isSelected: false),
   Category(
